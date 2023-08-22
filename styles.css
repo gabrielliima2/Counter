@@ -1,5 +1,6 @@
 body {
-  background: rgb(66, 66, 66);
+  background: #ac38acc0;
+  height: 100vh;
   color: white;
 }
 
@@ -10,21 +11,27 @@ body * {
 header {
   width: 100%;
   height: 100px;
-  background: rgb(116, 11, 11);
+  background: #7e207e;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  margin: 10px 0 ;
+  margin: 10px 0;
+  border: 2px solid white;
 }
 
 #container {
+  background: #ac38ac;
   display: block;
   width: min(
-    100%,
+    85%,
     950px
   ); /* a largura da pagina sendo menor que 950px, o container fica 100% do tamanho da tela*/
+  height: 70%;
   margin: auto;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 #teams {
@@ -34,12 +41,14 @@ header {
   padding: 10px;
   border-radius: 20px;
   margin: 20px 0;
+  border: 2px solid white;
 }
 
 p {
   background: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 20px;
+  border: 2px solid white;
 }
 
 #scoreboard {
@@ -48,6 +57,7 @@ p {
   justify-content: space-around;
   border-radius: 20px;
   margin: 20px 0;
+  border: 2px solid white;
 }
 
 #p1,
@@ -56,6 +66,7 @@ p {
   padding: 20px 25px;
   margin: 15px;
   border-radius: 100%;
+  border: 2px solid white;
 }
 
 #points {
@@ -65,6 +76,7 @@ p {
 
 h2 {
   text-align: center;
+  margin: 0;
 }
 
 #wins {
@@ -73,14 +85,16 @@ h2 {
   justify-content: space-around;
   border-radius: 20px;
   margin: 20px 0 20px;
+  border: 2px solid white;
 }
 
 #w1,
 #w2 {
-  background: rgba(0, 0, 0, 0.7) ;
+  background: rgba(0, 0, 0, 0.7);
   padding: 20px 25px;
   margin: 15px;
   border-radius: 100%;
+  border: 2px solid white;
 }
 
 input {
@@ -89,7 +103,17 @@ input {
   width: 50px;
   height: 50px;
   text-align: center;
-  margin: 20px;
+  border-radius: 100%;
+  font-size: 30px;
+  transition: 100ms linear;
+  border: 2px solid white;
+
+  /*transition: propriedade duração função_de_tempo atraso*/
+
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+input:hover {
+  transform: scale(1.1);
 }
 
 a {
@@ -99,5 +123,5 @@ a {
 footer {
   margin: 40px 0;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
 }
