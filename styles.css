@@ -23,11 +23,12 @@ header {
 #container {
   background: #ac38ac;
   display: block;
+  position: relative;
   width: min(
     85%,
     950px
   ); /* a largura da pagina sendo menor que 950px, o container fica 100% do tamanho da tela*/
-  height: 70%;
+  height: 70vh;
   margin: auto;
   border: 2px solid white;
   border-radius: 30px;
@@ -36,6 +37,8 @@ header {
 
 #teams {
   background: rgba(0, 0, 0, 0.5);
+  right: 40%;
+
   display: flex;
   justify-content: space-around;
   padding: 10px;
