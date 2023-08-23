@@ -12,30 +12,29 @@
     </header>
     <section id="container">
       <h2>teams</h2>
-      <article id="teams">
+      <div id="teams">
         <p id="t1">Team 1</p>
         <p id="t2">Team 2</p>
-      </article>
+      </div>
       <h2>points</h2>
-      <article id="scoreboard">
+      <div id="scoreboard">
         <div id="p1">0</div>
         <div id="p2">0</div>
-      </article>
+      </div>
       <h2>Wins</h2>
-      <article id="wins">
+      <div id="wins">
         <div id="w1">0</div>
         <div id="w2">0</div>
-      </article>
-      <article id="points">
-        <input type="button" value="-" onclick="lessTeam1()" />
-        <input type="button" value="+" onclick="plusTeam1()" />
-        <input type="button" value="-" onclick="lessTeam2()" />
-        <input type="button" value="+" onclick="plusTeam2()" />
-      </article>
-      <article>
-        <input type="button" value="Reset" onclick="reset()" />
-      </article>
-      
+      </div>
+      <div id="points">
+          <input type="button" value="-" onclick="lessTeam1()" />
+          <input type="button" value="+" onclick="plusTeam1()" />
+          <input type="button" value="-" onclick="lessTeam2()" />
+          <input type="button" value="+" onclick="plusTeam2()" />
+      </div>
+      <div id="reset">
+        <input type="button" value="Reset" id="res" onclick="reset()" />
+      </div>
     </section>
     <footer>
       Feito por
