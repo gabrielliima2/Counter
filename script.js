@@ -56,3 +56,14 @@ function plusTeam2() {
     w2.innerHTML = win2
   }
 }
+
+function reset(){
+  ponto1 = 0
+  ponto2 = 0
+  win1 = 0
+  win2 = 0
+  p1.innerHTML= ponto1
+  p2.innerHTML = ponto2
+  w1.innerHTML = win1
+  w2.innerHTML = win2
+}
