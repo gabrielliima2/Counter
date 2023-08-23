@@ -1,8 +1,10 @@
 :root {
-  --header-color: #7e207e;
-  --border-bolor: white;
-  --bg-color: #ac38acc0;
+  --header-color: #ffffff;
+  --border-bolor: rgb(61, 61, 61);
+  --bg-color: #ffffff;
+  --titles-color: rgb(0, 0, 0);
   --txt-color: white;
+  --team1-color: rgb(59, 173, 250);
 }
 
 html {
@@ -12,7 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   background: var(--bg-color);
-  color: var(--txt-color);
+  color: var(--titles-color);
 }
 
 body * {
@@ -60,11 +62,12 @@ header {
 }
 
 #t1 {
-  background: blue;
+  background: var(--team1-color);
   padding: 3rem;
   border-radius: 2rem;
   border: 0.2rem solid var(--border-bolor);
 }
+
 #t2 {
   background: red;
   padding: 3rem;
@@ -83,7 +86,7 @@ header {
 
 #p1,
 #p2 {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   padding: 2rem 2.5rem;
   margin: 1.5rem;
   border-radius: 100%;
@@ -111,7 +114,7 @@ h2 {
 
 #w1,
 #w2 {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   padding: 2rem 2.5rem;
   margin: 1.5rem;
   border-radius: 100%;
