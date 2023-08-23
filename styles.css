@@ -1,7 +1,14 @@
+:root {
+  --header-color: #7e207e;
+  --border-bolor: white;
+  --bg-color: #ac38acc0;
+  --txt-color: white;
+}
+
 body {
-  background: #ac38acc0;
+  background: var(--bg-color);
   height: 100vh;
-  color: white;
+  color: var(--txt-color);
 }
 
 body * {
@@ -11,26 +18,25 @@ body * {
 header {
   width: 100%;
   height: 100px;
-  background: #7e207e;
+  background: var(--header-color);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
   margin: 10px 0;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
 }
 
 #container {
-  background: #ac38ac;
+  background: var(--bg-color);
   display: block;
   position: relative;
   width: min(
     85%,
     950px
   ); /* a largura da pagina sendo menor que 950px, o container fica 100% do tamanho da tela*/
-  height: 70%;
   margin: auto;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
   border-radius: 30px;
   padding: 20px;
 }
@@ -44,14 +50,20 @@ header {
   padding: 10px;
   border-radius: 20px;
   margin: 20px 0;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
 }
 
-p {
-  background: rgba(0, 0, 0, 0.7);
+#t1 {
+  background: blue;
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
+}
+#t2 {
+  background: red;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--border-bolor);
 }
 
 #scoreboard {
@@ -60,7 +72,7 @@ p {
   justify-content: space-around;
   border-radius: 20px;
   margin: 20px 0;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
 }
 
 #p1,
@@ -69,7 +81,7 @@ p {
   padding: 20px 25px;
   margin: 15px;
   border-radius: 100%;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
 }
 
 #points {
@@ -88,7 +100,7 @@ h2 {
   justify-content: space-around;
   border-radius: 20px;
   margin: 20px 0 20px;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
 }
 
 #w1,
@@ -97,19 +109,19 @@ h2 {
   padding: 20px 25px;
   margin: 15px;
   border-radius: 100%;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
 }
 
 input {
   background: black;
-  color: white;
+  color: var(--txt-color);
   width: 50px;
   height: 50px;
   text-align: center;
   border-radius: 100%;
   font-size: 30px;
   transition: 100ms linear;
-  border: 2px solid white;
+  border: 2px solid var(--border-bolor);
 
   /*transition: propriedade duração função_de_tempo atraso*/
 
@@ -120,7 +132,7 @@ input:hover {
 }
 
 a {
-  color: white;
+  color: var(--txt-color);
   text-decoration: none;
 }
 footer {
