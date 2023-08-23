@@ -28,7 +28,7 @@ header {
     85%,
     950px
   ); /* a largura da pagina sendo menor que 950px, o container fica 100% do tamanho da tela*/
-  height: 70vh;
+  height: 70%;
   margin: auto;
   border: 2px solid white;
   border-radius: 30px;
