@@ -5,7 +5,12 @@
   --txt-color: white;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
   background: var(--bg-color);
   color: var(--txt-color);
 }
@@ -16,7 +21,7 @@ body * {
 
 header {
   width: 100vw;
-  height: 100px;
+  height: 10rem;
   background: var(--header-color);
   display: flex;
   position: absolute;
@@ -33,13 +38,13 @@ header {
   position: relative;
   width: min(
     85%,
-    950px
-  ); /* a largura da pagina sendo menor que 950px, o container fica 100% do tamanho da tela*/
-  height: 650px;
-  margin: 110px auto 0 auto;
-  border: 2px solid var(--border-bolor);
-  border-radius: 30px;
-  padding: 20px;
+    95rem
+  ); /* a largura da pagina sendo menor que 95.0rem, o container fica 100% do tamanho da tela*/
+  height: 65rem;
+  margin: 11rem auto 0 auto;
+  border: 0.2rem solid var(--border-bolor);
+  border-radius: 3rem;
+  padding: 2rem;
 }
 
 #teams {
@@ -48,48 +53,47 @@ header {
 
   display: flex;
   justify-content: space-around;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 20px 0;
-  border: 2px solid var(--border-bolor);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  border: 0.2rem solid var(--border-bolor);
 }
 
 #t1 {
   background: blue;
-  padding: 30px;
-  border-radius: 20px;
-  border: 2px solid var(--border-bolor);
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--border-bolor);
 }
 #t2 {
   background: red;
-  padding: 30px;
-  border-radius: 20px;
-  border: 2px solid var(--border-bolor);
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--border-bolor);
 }
 
 #scoreboard {
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-around;
-  border-radius: 20px;
-  margin: 20px 0;
-  border: 2px solid var(--border-bolor);
+  border-radius: 2rem;
+  margin: 2rem 0;
+  border: 0.2rem solid var(--border-bolor);
 }
 
 #p1,
 #p2 {
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px 25px;
-  margin: 15px;
+  padding: 2rem 2.5rem;
+  margin: 1.5rem;
   border-radius: 100%;
-  border: 2px solid var(--border-bolor);
+  border: 0.2rem solid var(--border-bolor);
 }
 
 #points {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 h2 {
   text-align: center;
@@ -100,34 +104,34 @@ h2 {
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-around;
-  border-radius: 20px;
-  margin: 20px 0 20px;
-  border: 2px solid var(--border-bolor);
+  border-radius: 2rem;
+  margin: 2rem 0 2rem;
+  border: 0.2rem solid var(--border-bolor);
 }
 
 #w1,
 #w2 {
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px 25px;
-  margin: 15px;
+  padding: 2rem 2.5rem;
+  margin: 1.5rem;
   border-radius: 100%;
-  border: 2px solid var(--border-bolor);
+  border: 0.2rem solid var(--border-bolor);
 }
 
 input {
   background: black;
   color: var(--txt-color);
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   text-align: center;
   border-radius: 100%;
-  font-size: 30px;
+  font-size: 3rem;
   transition: 100ms linear;
-  border: 2px solid var(--border-bolor);
+  border: 0.2rem solid var(--border-bolor);
 
   /*transition: propriedade duração função_de_tempo atraso*/
 
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 input:hover {
   transform: scale(1.1);
@@ -138,9 +142,9 @@ a {
   text-decoration: none;
 }
 footer {
-  margin: 40px 0 0;
+  margin: 4rem 0 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 #reset {
@@ -150,8 +154,8 @@ footer {
 }
 
 #res {
-  width: 120px;
-  height: 50px;
-  border-radius: 20px;
-  margin-top: 20px;
+  width: 12rem;
+  height: 5rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
 }
